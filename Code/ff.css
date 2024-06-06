@@ -1,0 +1,34 @@
+.button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    animation: blur-effect 0.3s ease-in-out;
+  }
+  
+  @keyframes blur-effect {
+    0% {
+        backdrop-filter: blur(2px);
+    }
+    100% {
+        backdrop-filter: blur(5px);
+    }
+  }
+
+body {
+    background-color: #272822;
+}

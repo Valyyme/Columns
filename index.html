@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Columns</title>
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
-        <select>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-        </select>
-    </body>
+<head>
+  <title>5 Column Page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <label for="unit-select">Unités</label>
+      <select id="unit-select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>   
+    </div>
+    <div class="column">
+      <label for="dozen-select">Douzaines</label>
+      <select id="dozen-select">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+        <option value="70">70</option>
+        <option value="80">80</option>
+        <option value="90">90</option>
+      </select>   
+    </div>
+    <div class="column">
+      <label for="hundred-select">Centaines</label>
+      <select id="hundred-select">
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+      </select>   
+    </div>
+    <div class="column">
+      <label for="thousand-select">Milliers</label>
+      <select id="thousand-select">
+        <option value="1000">1000</option>
+        <option value="2000">2000</option>
+        <option value="3000">3000</option>
+        <option value="4000">4000</option>
+        <option value="5000">5000</option>
+        <option value="6000">6000</option>
+        <option value="7000">7000</option>
+        <option value="8000">8000</option>
+        <option value="9000">9000</option>
+      </select>   
+    </div>
+    <div class="column">
+      <label for="ten-thousand-select">Dix-mille</label>
+      <select id="ten-thousand-select">
+        <option value="10000">10000</option>
+        <option value="20000">20000</option>
+        <option value="30000">30000</option>
+        <option value="40000">40000</option>
+        <option value="50000">50000</option>
+        <option value="60000">60000</option>
+        <option value="70000">70000</option>
+        <option value="80000">80000</option>
+        <option value="90000">90000</option>
+      </select>   
+    </div>
+  </div>
+  <div class="operation">
+    <div id="produit_div">
+      <p class="operand">*</p>
+      <p id="produit"></p>
+    </div>
+  </div>
+  <button id="theme-toggle">
+    <i class="fa fa-moon" id="icon"></i>
+  </button>
+  <script src="JS/main.js"></script>
+</body>
 </html>
